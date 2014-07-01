@@ -1,0 +1,123 @@
+[
+    {
+        "semester": "Fall 2013",
+        "department": "ACCT",
+        "course": "1404",
+        "section": "17001",
+        "name": "Accounting 1",
+        "professor": "Dr. Zoiberg",
+        "unique_id": "mx0001b57",
+        "books": [
+            {
+                "name": "Campbell Biology",
+                "isbn": "9780321558237",
+                "author": "Reece",
+                "publisher": "Pearson",
+                "edition": "9th",
+                "buy": [
+                    {
+                        "type": "Buy Used",
+                        "amount": "72.88"
+                    },
+                    {
+                        "type": "Buy New",
+                        "amount": "145.00"
+                    }
+                ],
+                "rental": [
+                    {
+                        "type": "Rent Hardcover",
+                        "amount": "55.55",
+                        "period": "Rental due back: 5/15/2014"
+                    },
+                    {
+                        "type": "Rent eBook",
+                        "amount": "64.44",
+                        "period": "180 day rental"
+                    }
+                ],
+                "image": "http://ecx.images-amazon.com/images/I/41UWC4kbxGL.jpg",
+                "required": "Optional"
+            },
+            {
+                "name": "Norton Anthology of American Literature",
+                "isbn": "9780393913095",
+                "author": "Baym",
+                "publisher": "Norton",
+                "edition": "8th",
+                "buy": [
+                    {
+                        "type": "Buy Used",
+                        "amount": "72.88"
+                    },
+                    {
+                        "type": "Buy New",
+                        "amount": "145.00"
+                    },
+                    {
+                        "type": "Buy Used spiral-bound",
+                        "amount": "61.00"
+                    }
+                ],
+                "rental": [
+                    {
+                        "type": "Rent Hardcover",
+                        "amount": "55.55",
+                        "period": "Rental due back: 5/15/2014"
+                    },
+                    {
+                        "type": "Rent eBook",
+                        "amount": "64.44",
+                        "period": "180 day rental"
+                    }
+                ],
+                "image": "http://ecx.images-amazon.com/images/I/519NlddegvL.jpg",
+                "required": "Required",
+                "note": "Contains Vol A & B, both are required for the course"
+            }
+        ]
+    },
+    {
+        "semester": "Spring 2014",
+        "department": "MATH",
+        "course": "1390",
+        "section": "250",
+        "name": "Calculus II",
+        "professor": "Dr. Jackson",
+        "unique_id": "mr0x01bh8",
+        "books": [
+            {
+                "name": "Calculus, Early Transcendentals",
+                "isbn": "9780538497909",
+                "author": "Stewart",
+                "publisher": "Cengage Learning",
+                "edition": "7th 12",
+                "buy": [
+                    {
+                        "type": "Buy Used",
+                        "amount": "7.88"
+                    },
+                    {
+                        "type": "Buy New",
+                        "amount": "14.00"
+                    }
+                ],
+                "rental": [
+                    {
+                        "type": "Rent Hardcover",
+                        "amount": "5.55",
+                        "period": "Rental due back: 5/15/2014"
+                    },
+                    {
+                        "type": "Rent eBook",
+                        "amount": "6.44",
+                        "period": "180 day rental"
+                    }
+                ],
+                "image": "http://ecx.images-amazon.com/images/I/41zYKrvw3vL.jpg",
+                "required": "Required",
+                "note": "Used books may not come with access card"
+            }
+        ]
+    }
+]

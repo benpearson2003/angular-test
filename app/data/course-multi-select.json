@@ -1,0 +1,127 @@
+[
+    {
+        "semester": "Spring 2014",
+        "department": "ACCT",
+        "course": "2310",
+        "section": "001",
+        "name": "Accounting 1",
+        "professor": "Dr. Zoiberg",
+        "note": "Please also purchase a subscription to ",
+        "link": "http://yahoo.com",
+        "linkname": "Yahoo.com",
+        "books": [
+            {
+                "name": "Campbell Biology",
+                "isbn": "9780321558237",
+                "author": "Reece",
+                "publisher": "Pearson",
+                "edition": "9th",
+                "prices":
+                    {
+                        "buy": [
+                            {
+                                "type": "Used",
+                                "amount": "22.88"
+                            },
+                            {
+                                "type": "New",
+                                "amount": "245.00"
+                            }
+                        ],
+                        "rental":  [
+                            {
+                                "type": "Hardcover",
+                                "amount": "55.55"
+                            },
+                            {
+                                "type": "eBook",
+                                "amount": "64.44"
+                            }
+                        ]
+                    }
+                ,
+                "image": "http://ecx.images-amazon.com/images/I/41UWC4kbxGL._SL160_.jpg",
+                "required": "Optional"
+            },
+            {
+                "name": "Norton Anthology American Literature Vol A & B",
+                "isbn": "9780393913095",
+                "author": "Baym",
+                "publisher": "Norton",
+                "edition": "8th",
+                "prices":
+                        {
+                        "buy": [
+                            {
+                                "type": "Used Hardcover",
+                                "amount": "89.95"
+                            },
+                            {
+                                "type": "New Hardcover",
+                                "amount": "130.82"
+                            },
+                            {
+                                "type": "Used Spiral Bound",
+                                "amount": "77.77"
+                            },
+                            {
+                                "type": "New Package w/access code",
+                                "amount": "188.22"
+                            }
+                        ],
+                        "rental":  [
+                            {
+                                "type": "Hardcover",
+                                "amount": "55.55"
+                            },
+                            {
+                                "type": "eBook",
+                                "amount": "64.44"
+                            }
+                        ]
+                    }
+                ,
+                "image": "http://ecx.images-amazon.com/images/I/519NlddegvL._SL160_.jpg",
+                "required": "Required"
+            }
+        ]
+    },
+    {
+        "semester": "Spring 2014",
+        "department": "MATH",
+        "course": "1390",
+        "section": "250",
+        "name": "",
+        "professor": "Dr. Jackson",
+        "note": "",
+        "link": "",
+        "linkname": "",
+        "books": [
+            {
+                "name": "Calculus, Early Transcendentals",
+                "isbn": "9780538497909",
+                "author": "Stewart",
+                "publisher": "Cengage Learning",
+                "edition": "7th 12",
+                "prices":
+                    {
+                        "buy": [
+                            {
+                                "type": "Used",
+                                "amount": "89.95"
+                            },
+                            {
+                                "type": "New",
+                                "amount": "130.82"
+                            }
+                        ]
+                    }
+                ,
+                "rental":  [
+                ],
+                "image": "http://ecx.images-amazon.com/images/I/41zYKrvw3vL._SL160_.jpg",
+                "required": "Required"
+            }
+        ]
+    }
+]

@@ -1,0 +1,32 @@
+<style>
+    th{
+        margin: 5px;
+    }
+    td{
+        border: 1px solid navy;
+    }
+</style>
+<div>
+    <div ng-controller="CourseLookupCtrl">
+        Search: <input ng-model="searchObj.$" placeholder="Search by Dept, Course, Section or Professor" style="width: 50%">
+        <table>
+            <tr>
+                <th><a href="" ng-click="sortBy='department_name'; reverse=!reverse;">Department Name</a><br/><input ng-model="searchObj.department_name"></th>
+                <th><a href="" ng-click="sortBy='department_code'; reverse=!reverse;">Department Code</a><br/><input ng-model="searchObj.department_code"></th>
+                <th><a href="" ng-click="sortBy='course_code'; reverse=!reverse;">Course Code</a><br/><input ng-model="searchObj.course_code"></th>
+                <th><a href="" ng-click="sortBy='course_name'; reverse=!reverse;">Course Name</a><br/><input ng-model="searchObj.course_name"></th>
+                <th><a href="" ng-click="sortBy='section_code'; reverse=!reverse;">Section</a><br/><input ng-model="searchObj.section_code"></th>
+                <th><a href="" ng-click="sortBy='professor_name'; reverse=!reverse;">Professor Name</a><br/><input ng-model="searchObj.professor_name"></th>
+            </tr>
+            <tr ng-repeat="s in schedule | filter:searchObj | orderBy:sortBy:reverse">
+                    <td>{{ s.department_name }}</td>
+                    <td>{{ s.department_code }}</td>
+                    <td>{{ s.course_code }}</td>
+                    <td>{{ s.course_name }}</td>
+                    <td>{{ s.section_code }}</td>
+                    <td></td>
+            </tr>
+        </table>
+    </div>
+</div>
+

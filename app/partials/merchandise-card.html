@@ -1,0 +1,224 @@
+<div class="row"><h2 class="text-center">Merchandise Card</h2></div>
+<style>
+    .card{
+        background: #fff;
+        border: 1px solid #AAA;
+        border-bottom: 3px solid #BBB;
+        margin-bottom: 30px;
+        /*overflow: hidden;*/
+        padding: 5px;
+    }
+    .card h1{
+        margin: 0;
+        padding: 10px;
+        padding-bottom: 0;
+    }
+    .card p{
+        margin: 0;
+        padding: 10px;
+    }
+    .card-image{
+        width: 100%;
+        height: 300px;
+        padding: 0;
+        margin: 0;
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    .card-image .banner{
+        height: 100px;
+        width: 100px;
+        top: 0;
+        right: 0;
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-image: url(http://localhost:63342/angular-test/app/img/required-100px.png);
+        position: absolute;
+        z-index: 2;
+    }
+    .card-image h2{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        background: rgba(178,143,89,0.75);
+        margin: 0;
+        padding: 6px;
+        border: none;
+    }
+    .option-box{
+        margin-top: 10px;
+        /*background: #910039;*/
+        padding: 0;
+        font-size: 1.3em;
+        /*color: #fff;*/
+        cursor: pointer;
+        top: 4px;
+        /*border: 1px solid black;*/
+        width: 49%;
+    }
+    .option-box button{
+        /*padding: 7px 15px;*/
+        background: #910039;
+        width: 100%;
+        color: #fff;
+    }
+    .option-box small{
+        font-size: 0.70em;
+    }
+    .btn-group{
+        display: block;
+    }
+    .card-image h2{
+        line-height: 0.8;
+        padding: 10px;
+    }
+    .card-image h2 small{font-size: 0.45em; color: #bbb;}
+    .accordion-toggle{
+        /*background: #f0f;*/
+        display: block;
+        padding: 10px 15px;
+    }
+    .panel-heading{
+        padding: 0;
+    }
+    .course-info h4{
+        margin: 0;
+        padding: 6px;
+    }
+    .course-info h4 small{
+        color: #fff;
+    }
+    .dropdown-menu{
+        background: #910039;
+    }
+    .dropdown-menu li a{
+        color: #fff;
+    }
+    .dropdown-menu li a:hover{
+        background: #B28F59 !important;
+        color: #fff;
+    }
+    .dropdown-menu .active a{background: #B28F59;}
+    .add_img{width: 90px;}
+    .addToCartButton{
+        background: #910039;
+        color: #fff;
+        margin-top: 10px;
+    }
+    .additional_images{
+        list-style: none;
+        padding-left: 0;
+    }
+    .additional_images li{
+        padding-right: 5px;
+        padding-left: 0;
+        cursor: pointer;
+    }
+</style>
+
+<div class="row" ng-controller="MerchandiseCardCtrl">
+    <div>
+        <div class="col-md-6 col-xs-12 col-sm-6 col-lg-4" ng-repeat="m in merchandise">
+            <div class="card" ng-model="searchObj.$">
+                <div class="row">
+                    <!-- no direct comparison here, so removed at this time
+                    <div class="course-info">
+                        <h4>{{course.name}} - <small>{{course.professor}}</small></h4>
+                    </div>
+                    -->
+                    <div ng-if="varPicture == ''" class="card-image col-md-12" ng-style="{'background-image': 'url('+m.picture+')'}">
+                        <h2>{{m.title}}</h2>
+                    </div>
+                    <div ng-if="varPicture != ''" class="card-image col-md-12" ng-style="{'background-image': 'url('+varPicture+')'}">
+                        <!-- commented out, use similar for new, or sale, special.
+                        <div ng-if="book.required == 'Required'" class="banner"></div>
+                        -->
+
+                        <h2>{{m.title}}</h2>
+                    </div>
+                </div>
+
+                <div class="price">
+                    <div class="row">
+                        <div class="buyrent-container">
+                            <div class="col-xs-6 option-box" style="margin-right: 5px;">
+                                <button class="text-center dropdown-toggle" data-toggle="dropdown">
+                                    {{m.option1_name}}<br/>
+                                    <small ng-if="option1Value == ''">Please Select..</small>
+                                    <small ng-if="option1Value != ''">{{option1Value}}</small>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li ng-repeat="value in m.values | unique:'option1_value'" ng-model="$parent.option1Value" btn-radio="'{{value.option1_value}}'">
+                                        <a>{{value.option1_value}}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-6 option-box">
+                                <button ng-disabled="option1Value == ''" class="text-center dropdown-toggle" data-toggle="dropdown">
+                                    {{m.option2_name}}<br/>
+                                    <small ng-if="option2Value == ''">Please Select a {{m.option1_name}}</small>
+                                    <small ng-if="option2Value != ''">{{option2Value}}</small>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <!--<li ng-if="option1Value == ''" ng-repeat="value in m.values | unique:'option2_value'" ng-model="$parent.$parent.option2Value" btn-radio="'{{value.option2_value}}'">
+                                        <a>{{value.option2_value}}</a>
+                                    </li> -->
+                                    <li ng-if="option1Value != ''" ng-repeat="value in m.values | filter:option1Value" ng-model="$parent.$parent.option2Value" btn-radio="'{{value.option2_value}}'">
+                                        <a>{{value.option2_value}}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-top: 10px;">
+                    <div class="col-xs-6" ng-if="option1Value == '' || option2Value == ''"></div>
+                    <div class="col-xs-6" ng-if="option1Value != '' && option2Value != ''" ng-repeat="value in filteredValue = (m.values | filter:option1Value:true | filter:option2Value:true)">
+                        Stock: {{value.stock}}
+                    </div>
+                    <div class="col-xs-6" ng-hide="filteredValue.length"><strong>Out of Stock</strong></div>
+                    <div class="col-xs-6 text-right" ng-if="option1Value == '' || option2Value == ''">
+                        <strong>Price: ${{m.base_price}}</strong>
+                    </div>
+                    <div class="col-xs-6 text-right" ng-if="option1Value != '' && option2Value != ''" ng-repeat="value in filteredValue">
+                        <strong>Price: $<span ng-bind="$parent.$eval(m.base_price + value.price_difference)"></span></strong>
+                    </div>
+                </div>
+
+                <div class="info">
+                    <accordion>
+                        <accordion-group is-open="isopen">
+                            <accordion-heading>
+                                More information about this item
+                                <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': isopen, 'glyphicon-chevron-right': !isopen}"></i>
+                            </accordion-heading>
+                            Description: {{m.description}}
+                            Categories: <span ng-repeat="cat in m.categories">{{cat.category}}, </span>
+                            <div>
+                                Additional Images:<br/>
+                                <ul class="additional_images row">
+                                    <li class="col-xs-3" ng-model="$parent.$parent.varPicture" btn-radio="'{{m.picture}}'">
+                                        <img class="add_img" src="{{m.picture}}" width="90px"/>
+                                    </li>
+                                    <li class="col-xs-3" ng-repeat="pic in m.additional_pictures" ng-model="$parent.$parent.$parent.varPicture" btn-radio="'{{pic.image}}'">
+                                        <img class="add_img" src="{{pic.image}}" width="90px"/>
+                                    </li>
+                                </ul>
+                            </div>
+                        </accordion-group>
+                    </accordion>
+                </div>
+                <div class="add_to_cart row">
+                    <button class="addToCartButton col-xs-6 col-xs-offset-6" ng-disabled="option1Value == '' || option2Value == ''" ng-click="addToCart(m)">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

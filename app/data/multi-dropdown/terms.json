@@ -1,0 +1,17 @@
+[
+    {
+        "term_name": "Fall 2013",
+        "term_code": "a12345",
+        "school_code": "0003x"
+    },
+    {
+        "term_name": "Fall 13",
+        "term_code": "a23456",
+        "school_code": "0024y"
+    },
+    {
+        "term_name": "Spring 2014",
+        "term_code": "b12345",
+        "school_code": "0003x"
+    }
+]

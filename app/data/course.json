@@ -1,0 +1,137 @@
+[
+    {
+        "semester": "Spring 2014",
+        "department": "ACCT",
+        "course": "2310",
+        "section": "001",
+        "name": "Accounting 1",
+        "professor": "Dr. Zoiberg",
+        "note": "Please also purchase a subscription to ",
+        "link": "http://yahoo.com",
+        "linkname": "Yahoo.com",
+        "books": [
+            {
+                "name": "Campbell Biology",
+                "isbn": "9780321558237",
+                "author": "Reece",
+                "publisher": "Pearson",
+                "edition": "9th",
+                "prices": [
+                    {
+                        "name": "Used",
+                        "binding": "Hardcover",
+                        "amount": "89.95"
+                    },
+                    {
+                        "name": "New",
+                        "binding": "Hardcover",
+                        "amount": "130.82"
+                    },
+                    {
+                        "name": "Rental",
+                        "binding": "Hardcover",
+                        "amount": "55.55"
+                    },
+                    {
+                        "name": "New",
+                        "binding": "Looseleaf",
+                        "amount": "110.99"
+                    },
+                    {
+                        "name": "Used",
+                        "binding": "Spiral",
+                        "amount": "70.88"
+                    },
+                    {
+                        "name": "eBook",
+                        "binding": "ebook",
+                        "amount": "62.59"
+                    }
+                ],
+                "image": "http://ecx.images-amazon.com/images/I/41UWC4kbxGL._SL160_.jpg",
+                "required": "Optional"
+            },
+            {
+                "name": "Norton Anthology American Literature Vol A & B",
+                "isbn": "9780393913095",
+                "author": "Baym",
+                "publisher": "Norton",
+                "edition": "8th",
+                "prices": [
+                    {
+                        "name": "New",
+                        "amount": "72.95"
+                    },
+                    {
+                        "name": "Used",
+                        "amount": "58.99"
+                    },
+                    {
+                        "name": "Rental",
+                        "amount": "38.00"
+                    },
+                    {
+                        "name": "Reserve Used",
+                        "amount": "0.00"
+                    }
+                ],
+                "image": "http://ecx.images-amazon.com/images/I/519NlddegvL._SL160_.jpg",
+                "required": "Required"
+            }
+        ]
+    },
+    {
+        "semester": "Spring 2014",
+        "department": "MATH",
+        "course": "1390",
+        "section": "250",
+        "name": "",
+        "professor": "Dr. Jackson",
+        "note": "",
+        "link": "",
+        "linkname": "",
+        "books": [
+            {
+                "name": "Calculus, Early Transcendentals",
+                "isbn": "9780538497909",
+                "author": "Stewart",
+                "publisher": "Cengage Learning",
+                "edition": "7th 12",
+                "prices": [
+                    {
+                        "name": "Used",
+                        "binding": "Hardcover",
+                        "amount": "89.95"
+                    },
+                    {
+                        "name": "New",
+                        "binding": "Hardcover",
+                        "amount": "130.82"
+                    },
+                    {
+                        "name": "Rental",
+                        "binding": "Hardcover",
+                        "amount": "55.55"
+                    },
+                    {
+                        "name": "New",
+                        "binding": "Looseleaf",
+                        "amount": "110.99"
+                    },
+                    {
+                        "name": "Used",
+                        "binding": "Spiral",
+                        "amount": "70.88"
+                    },
+                    {
+                        "name": "eBook",
+                        "binding": "ebook",
+                        "amount": "62.59"
+                    }
+                ],
+                "image": "http://ecx.images-amazon.com/images/I/41zYKrvw3vL._SL160_.jpg",
+                "required": "Required"
+            }
+        ]
+    }
+]

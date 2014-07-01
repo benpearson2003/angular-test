@@ -1,0 +1,19 @@
+<div>This is a book with cool shit</div>
+
+<div>
+    <table ng-controller="BookCtrl as boo">
+        <tr><td>{{ boo.t }}</td></tr>
+        <tr>
+            <td>{{ boo.second.enable }}</td>
+            <td>{{ boo.second.direction }}</td>
+        </tr>
+        <tr><td>{{ boo.thirds.length }}</td></tr>
+        <tr ng-repeat="third in boo.thirds"><td>{{ third.tree }}</td></tr>
+        <tr ng-repeat="book in boo.books">
+            <td>{{ book.name }}</td>
+            <td>{{ book.isbn }}</td>
+            <td><img src="{{ book.image }}"/> </td>
+        </tr>
+    </table>
+</div>
+

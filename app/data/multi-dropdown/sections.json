@@ -1,0 +1,163 @@
+[
+    {
+        "section_code":"18038",
+        "professor": "Dr. Zoiberg",
+        "unique_id": "mx00fdskljdsfkl",
+        "course_code": "abcdefg",
+        "term_code": "a12345"
+    },
+    {
+        "section_code":"18037",
+        "professor": "Dr. Zoiberg",
+        "unique_id": "mxsajkldfk57",
+        "course_code": "abcdefg",
+        "term_code": "a12345"
+    },
+    {
+        "section_code":"18052",
+        "professor": "Dr. Minton",
+        "unique_id": "mx0ljjklab57",
+        "course_code": "bcdefgh",
+        "term_code": "a12345"
+    },
+    {
+        "section_code":"001",
+        "professor": "Dr. Robinson",
+        "unique_id": "mx00awuioi57",
+        "course_code": "cdefghj",
+        "term_code": "a12345"
+    },
+    {
+        "section_code": "002",
+        "professor": "Mr. Jefferson",
+        "unique_id": "mx000sfjqwi3",
+        "course_code": "cdefghj",
+        "term_code": "a12345"
+    },
+    {
+        "section_code": "003",
+        "professor": "Benny Fieldhaber",
+        "unique_id": "mx000121398479023",
+        "course_code": "cdefghj",
+        "term_code": "a12345"
+    },
+    {
+        "section_code": "01",
+        "professor": "Dr. Jackson",
+        "unique_id": "mr0x01bh8",
+        "course_code": "defghji",
+        "term_code": "a12345"
+    },
+    {
+        "section_code": "02",
+        "professor": "Dr. Jackson",
+        "unique_id": "mdsklfjlk01b57",
+        "course_code": "defghji",
+        "term_code": "a12345"
+    },
+    {
+        "section_code": "03",
+        "professor": "Dr. Jackson",
+        "unique_id": "mx0salkjfsk57",
+        "course_code": "defghji",
+        "term_code": "a12345"
+    },
+    {
+        "section_code": "04",
+        "professor": "Professor Farnsworth",
+        "unique_id": "ouewqio0001b57",
+        "course_code": "efghjik",
+        "term_code": "a12345"
+    },
+    {
+        "section_code": "01",
+        "professor": "Professor Farnsworth",
+        "unique_id": "mioriopu2319nc7",
+        "course_code": "fghjikl",
+        "term_code": "a23456"
+    },
+    {
+        "section_code": "02",
+        "professor": "Mrs. Krabappel",
+        "unique_id": "mx0iuewiounncc001b57",
+        "course_code": "ghjiklm",
+        "term_code": "a23456"
+    },
+    {
+        "section_code": "01",
+        "professor": "Professor Farnsworth",
+        "unique_id": "89328kksab57",
+        "course_code": "ghjiklm",
+        "term_code": "a23456"
+    },
+    {
+        "section_code":"03",
+        "professor": "Mrs. Krabappel",
+        "unique_id": "mdsjkldfslkjdfsljk7",
+        "course_code": "ghjiklm",
+        "term_code": "a23456"
+    },
+    {
+        "section_code":"17001",
+        "professor": "Dr. Zoiberg",
+        "unique_id": "mx0001b57",
+        "course_code": "hjiklmn",
+        "term_code": "a12345"
+    },
+    {
+        "section_code":"17002",
+        "professor": "Fred Weasely",
+        "unique_id": "mx0001157",
+        "course_code": "hjiklmn",
+        "term_code": "a12345"
+    },
+    {
+        "section_code":"17003",
+        "professor": "George Weasely",
+        "unique_id": "mxdf01b57",
+        "course_code": "hjiklmn",
+        "term_code": "a12345"
+    },
+    {
+        "section_code":"17010",
+        "professor": "Dr. Minton",
+        "unique_id": "mx0001357",
+        "course_code": "jiklmno",
+        "term_code": "a12345"
+    },
+    {
+        "section_code":"17011",
+        "professor": "Fred Weasely",
+        "unique_id": "ax0001b57",
+        "course_code": "jiklmno",
+        "term_code": "a12345"
+    },
+    {
+        "section_code":"17012",
+        "professor": "Fred Weasely",
+        "unique_id": "mx078djas",
+        "course_code": "jiklmno",
+        "term_code": "a12345"
+    },
+    {
+        "section_code":"17310",
+        "professor": "Geogre Weasely",
+        "unique_id": "mg0001b57",
+        "course_code": "iklmnop",
+        "term_code": "a12345"
+    },
+    {
+        "section_code": "17311",
+        "professor": "Dr. Minton",
+        "unique_id": "mxol01b57",
+        "course_code": "iklmnop",
+        "term_code": "a12345"
+    },
+    {
+        "section_code": "17312",
+        "professor": "Staff",
+        "unique_id": "w20001b57",
+        "course_code": "iklmnop",
+        "term_code": "a12345"
+    }
+]

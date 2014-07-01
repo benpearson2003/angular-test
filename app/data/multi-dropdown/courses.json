@@ -1,0 +1,62 @@
+[
+    {
+        "course_short":"3343",
+        "course_name":"ADVANCED SPREADSHEET APPLICATIONS",
+        "course_code": "abcdefg",
+        "department_code": "abc123"
+    },
+    {
+        "course_short":"4370",
+        "course_name":"ADVANCED TOPICS IN INFORMATION SYSTEMS",
+        "course_code": "bcdefgh",
+        "department_code": "abc123"
+    },
+    {
+        "course_short":"1703",
+        "course_name":"Spreadsheet Applications",
+        "course_code": "cdefghj",
+        "department_code": "abc123"
+    },
+    {
+        "course_short": "2003",
+        "course_name": "History of WWI",
+        "course_code": "defghji",
+        "department_code": "abc234"
+    },
+    {
+        "course_short": "3021",
+        "course_name": "Battle of the Bulge",
+        "course_code": "efghjik",
+        "department_code": "abc234"
+    },
+    {
+        "course_short": "2903",
+        "course_name": "The Great Depression",
+        "course_code": "fghjikl",
+        "department_code": "bcd123"
+    },
+    {
+        "course_short": "3044",
+        "course_name": "Lots and Lots of Sand",
+        "course_code": "ghjiklm",
+        "department_code": "bcd123"
+    },
+    {
+        "course_short":"1404",
+        "course_name":"Accounting I",
+        "course_code": "hjiklmn",
+        "department_code": "abc345"
+    },
+    {
+        "course_short":"1504",
+        "course_name":"Accounting II",
+        "course_code": "jiklmno",
+        "department_code": "abc345"
+    },
+    {
+        "course_short":"3403",
+        "course_name":"Tax Preparation",
+        "course_code": "iklmnop",
+        "department_code": "abc345"
+    }
+]

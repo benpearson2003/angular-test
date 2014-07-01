@@ -1,0 +1,41 @@
+<div class="row"><h2 class="col-md-4 col-md-offset-4">Book from json file</h2></div>
+
+<div ng-controller="BookFromFileCtrl"><!-- style="max-width: 900px;" -->
+    <!-- <div>{{ boo.turtle }}</div> -->
+    <div ng-repeat="book in books | orderBy:'-required' " class="row" style="margin-bottom: 20px; background: #F8F8FF; padding: 25px 0; border: 1px black solid;"> <!--style="margin-bottom: 20px;" -->
+        <div class="col-md-12">
+
+            <!-- title inline with image try 2-->
+            <div class="col-md-2">
+                <img src="{{ book.image }}" class="img-responsive img-thumbnail" style="margin: 0 auto; display: block;"/>
+            </div>
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 ng-if="book.required == 'Required'" style="margin-top: 0">{{book.name}} - <span style="color: red;">{{book.required}}</span></h2>
+
+                        <h2 ng-if="book.required == 'Optional'" style="margin-top: 0">{{book.name}} - <span style="color: green;">{{book.required}}</span></h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4" id="info">
+                        Author: {{ book.author }}<br/>
+                        ISBN: {{ book.isbn }}
+                    </div>
+                    <div class="col-md-4">
+                        Publisher: {{ book.publisher }}<br/>
+                        Edition: {{ book.edition }}
+                    </div>
+                    <div class="col-md-4">
+                        <select name="book-type" class="form-control input-lg">
+                            <option value="none"></option>
+                            <option ng-repeat="price in book.prices" value="{{ price.name }}-{{ price.amount }}">
+                                {{ price.binding }} {{ price.name }} - {{ price.amount }}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

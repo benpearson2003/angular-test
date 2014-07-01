@@ -1,0 +1,48 @@
+<style>
+
+</style>
+
+<div ng-controller="CourseLookupMultiDropdownCtrl" class="row">
+    <div class="col-xs-12">
+        <select name="schoolSelect" class="form-control" ng-model="schoolSelector">
+            <option ng-repeat="s in schools" value="{{ s.school_code }}">
+                {{ s.school_name }}
+            </option>
+        </select>
+        {{myOtherNumber}}
+        <ul>
+            <li ng-repeat="i in getNumber(myOtherNumber)"><span>{{$index}} - {{myOtherNumber}}</span></li>
+        </ul>
+        <div class="row" ng-repeat="repeat in getTimes(numRepeat2)"> <!-- commented out to leave working ng-repeat="g in getTimes(numRepeat)" -->
+            <div class="col-xs-3">
+                <select name="termSelect" class="form-control" ng-model="termSelector">
+                    <option ng-repeat="t in terms | filter:schoolSelector" value="{{ t.term_code }}">
+                        {{ t.term_name }}
+                    </option>
+                </select>
+            </div>
+            <div class="col-xs-3">
+                <select name="deptSelect" class="form-control" ng-model="deptSelector">
+                    <option ng-repeat="d in departments | filter:schoolSelector" value="{{ d.department_code }}">
+                        {{ d.department_name }}
+                    </option>
+                </select>
+            </div>
+            <div class="col-xs-3">
+                <select name="courseSelect" class="form-control" ng-model="courseSelector">
+                    <option ng-repeat="c in courses | filter:deptSelector" value="{{ c.course_code }}">
+                        {{ c.course_name }}
+                    </option>
+                </select>
+            </div>
+            <div class="col-xs-3">
+                <select name="sectionSelect" class="form-control" ng-model="sectionSelector">
+                    <option ng-repeat="sec in sections | filter:courseSelector:termSelector" value="{{ sec.unique_id }}">
+                        {{ sec.section_code }}
+                    </option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+

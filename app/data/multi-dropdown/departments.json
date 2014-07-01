@@ -1,0 +1,26 @@
+[
+    {
+        "department_name":"MANAGEMENT INFO SYSTEMS",
+        "department_short":"MIS",
+        "department_code": "abc123",
+        "school_code": "0003x"
+    },
+    {
+        "department_name": "History",
+        "department_short": "HIST",
+        "department_code": "abc234",
+        "school_code": "0003x"
+    },
+    {
+        "department_name": "History",
+        "department_short": "HIST",
+        "department_code": "bcd123",
+        "school_code": "0024y"
+    },
+    {
+        "department_name":"Accounting",
+        "department_short":"ACCT",
+        "department_code": "abc345",
+        "school_code": "0003x"
+    }
+]

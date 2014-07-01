@@ -1,0 +1,74 @@
+[
+    {
+        "title": "Boston College T-Shirt",
+        "description": "This is the shirt description",
+        "base_price": "19.99",
+        "picture": "http://images.efollett.com/spirit/v4/1111/LUM7201-P2231670.jpg",
+        "unique_id": "mx0001b57",
+        "additional_pictures": [
+            {
+                "image": "http://images.efollett.com/spirit/v4/1111/LT1000-P1136682F.jpg"
+            },
+            {
+                "image": "http://images.efollett.com/spirit/v4/1111/LUMC0202-CP802.jpg"
+            },
+            {
+                "image": "http://images.efollett.com/spirit/v4/1111/LM0680-P2131201D.jpg"
+            }
+        ],
+        "categories": [
+            {
+                "category": "Shirts"
+            },
+            {
+                "category": "Mens"
+            }
+        ],
+        "option1_name": "Color",
+        "option2_name": "Size",
+        "option3_name": "",
+        "values": [
+            {
+                "sku": "000475",
+                "price_difference": "-2.00",
+                "stock": "30",
+                "option1_value": "Maroon",
+                "option2_value": "Small",
+                "option3_value": ""
+            },
+            {
+                "sku": "000475",
+                "price_difference": "",
+                "stock": "10",
+                "option1_value": "Maroon",
+                "option2_value": "Medium",
+                "option3_value": ""
+
+            },
+            {
+                "sku": "000476",
+                "price_difference": "",
+                "stock": "8",
+                "option1_value": "Maroon",
+                "option2_value": "Large",
+                "option3_value": ""
+            },
+            {
+                "sku": "000477",
+                "price_difference": "+2.00",
+                "stock": "4",
+                "option1_value": "Maroon",
+                "option2_value": "X-Large",
+                "option3_value": ""
+            },
+            {
+                "sku": "000475",
+                "price_difference": "",
+                "stock": "6",
+                "option1_value": "Gold",
+                "option2_value": "Large",
+                "option3_value": ""
+            }
+        ]
+    }
+]

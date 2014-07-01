@@ -1,0 +1,85 @@
+<style>
+    th{
+        margin: 5px;
+    }
+    td{
+        border: 1px solid navy;
+    }
+</style>
+
+<div>
+    <div ng-controller="CourseLookup2Ctrl">
+        <div class="col-md-6">
+            <select name="schoolSelect" class="form-control" ng-model="schoolSelector">
+                <option ng-repeat="s in schedule" value="{{ s.school_name }}">
+                    {{ s.school_name }}
+                </option>
+            </select>
+            <div ng-repeat="s in schedule | filter:schoolSelector">
+                <select name="termSelect" class="form-control" ng-model="termSelector">
+                    <option ng-repeat="t in s.terms" value="{{ t.term_name }}">
+                        {{ t.term_name }}
+                    </option>
+                </select>
+                <div ng-repeat="t in s.terms | filter:termSelector">
+                    <select name="deptSelect" class="form-control" ng-model="deptSelector">
+                        <option ng-repeat="d in t.departments" value="{{d.department_code}}">
+                            {{d.department_name}} - {{d.department_code}}
+                        </option>
+                    </select>
+                    <div ng-repeat="d in t.departments | filter:deptSelector">
+                        <select name="courseSelect" class="form-control" ng-model="courseSelector">
+                            <option ng-repeat="c in d.courses" value="{{c.course_code}}">
+                                {{c.course_name}} - {{c.course_code}}
+                            </option>
+                        </select>
+                        <div ng-repeat="c in d.courses | filter:courseSelector">
+                            <!-- <select name="sectionSelect" class="form-control" ng-model="sectionSelector">
+                                <option ng-repeat="sec in c.sections" value="{{sec.section_code}}" ng-click="selectSection()">
+                                    {{sec.section_code}} - {{sec.professor}} - {{sec.unique_id}} - {{uniqueID}}
+                                </option>
+                            </select> -->
+                            <div ng-repeat="sec in c.sections">
+                                <input type="radio" value="{{sec.section_code}}" name="sectionSelector" ng-click="selectSection(sec.professor, sec.unique_id, sec.section_code)">
+                                {{sec.section_code}} - {{sec.professor}}
+                            </div>
+                            <div ng-if="sectionSelector != 'Not a section'">
+                                <button ng-click="addCourse()">Add to Course Lookup</button>
+                            </div>
+                            {{sectionSelector}} - {{uniqueID}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h3>courses added</h3>
+            <div class="row">
+                <div ng-repeat="a in coursesAdded" class="col-md-6 course-added">
+                    {{a.school}} - {{a.term_name}} - {{a.department_code}} - {{a.course_code}} - {{a.section_code}} - {{a.unique_id}}
+                </div>
+            </div>
+        </div>
+
+        <!-- Search: <input ng-model="searchObj.$" placeholder="Search by Dept, Course, Section or Professor" style="width: 50%">
+        <table>
+            <tr>
+                <th><a href="" ng-click="sortBy='department_name'; reverse=!reverse;">Department Name</a><br/><input ng-model="searchObj.department_name"></th>
+                <th><a href="" ng-click="sortBy='department_code'; reverse=!reverse;">Department Code</a><br/><input ng-model="searchObj.department_code"></th>
+                <th><a href="" ng-click="sortBy='course_code'; reverse=!reverse;">Course Code</a><br/><input ng-model="searchObj.course_code"></th>
+                <th><a href="" ng-click="sortBy='course_name'; reverse=!reverse;">Course Name</a><br/><input ng-model="searchObj.course_name"></th>
+                <th><a href="" ng-click="sortBy='section_code'; reverse=!reverse;">Section</a><br/><input ng-model="searchObj.section_code"></th>
+                <th><a href="" ng-click="sortBy='professor_name'; reverse=!reverse;">Professor Name</a><br/><input ng-model="searchObj.professor_name"></th>
+            </tr>
+            <tr ng-repeat="s in schedule | filter:searchObj | orderBy:sortBy:reverse">
+                    <td>{{ s.term_name }}</td>
+                    <td>{{ s.department_code }}</td>
+                    <td>{{ s.course_code }}</td>
+                    <td>{{ s.course_name }}</td>
+                    <td>{{ s.section_code }}</td>
+                    <td></td>
+            </tr>
+        </table> -->
+    </div>
+</div>
+
