@@ -6,6 +6,28 @@
                 "term_name":"FALL 2013",
                 "departments": [
                     {
+                    		"department_name":"Lickers",
+            						"department_code":"BUT",
+            						"courses": [
+                            {
+                                "course_code":"1111",
+                                "course_name":"Sweet Rims Brah",
+                                "sections": [
+                                    {
+                                        "section_code":"88888",
+                                        "professor": "Mr. Ragamuffin",
+                                        "unique_id": "mx0298723879"
+                                    },
+                                    {
+                                        "section_code":"18037",
+                                        "professor": "Dr. Zoiberg",
+                                        "unique_id": "mxsajkldfk57"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
                         "department_name":"MANAGEMENT INFO SYSTEMS",
                         "department_code":"MIS",
                         "courses": [
